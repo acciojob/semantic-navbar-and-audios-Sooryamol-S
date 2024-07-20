@@ -3,35 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semantic Navbar & Audios</title>
+    <title>Semantic Navbar & Audio Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .audio-section {
+            margin: 20px;
+            text-align: center;
+        }
+        .audio-section h2 {
+            margin-bottom: 20px;
+        }
+        .audio-section audio {
+            display: block;
+            margin: 10px auto;
+            width: 300px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Part 1: Navbar -->
+
+    <!-- Navigation Bar -->
     <nav>
         <ul>
-            <li><a href="https://example.com/link1">Link 1</a></li>
-            <li><a href="https://example.com/link2">Link 2</a></li>
-            <li><a href="https://example.com/link3">Link 3</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Part 2: Audio Section -->
-    <section>
-        <h2>3 random audios</h2>
+    <!-- Audio Section -->
+    <section class="audio-section">
+        <h2>3 Random Audios</h2>
         <audio controls>
-            <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">
+            <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>
-        <br>
         <audio controls>
             <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
             Your browser does not support the audio element.
         </audio>
-        <br>
         <audio controls>
-            <source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mpeg">
+            <source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>
     </section>
+
 </body>
 </html>
